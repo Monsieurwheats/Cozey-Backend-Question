@@ -1,0 +1,85 @@
+[
+    {
+      "orderId": "ORD001",
+      "orderDate": "2024-06-09T00:00:00.000Z",
+      "shippingAddress": {
+        "street": "123 Main St",
+        "city": "Anytown",
+        "state": "CA",
+        "zipCode": "12345",
+        "country": "USA"
+      },
+      "customerName": "John Doe",
+      "customerEmail": "john@example.com",
+      "lineItems": [
+        {
+          "name": "Valentine's Box",
+          "lineItemProducts": [
+            {"product":{"name": "Red Roses Bouquet", "price": 29.99},"quantity": 1},
+            {"product":{"name": "Box of Chocolates", "price": 15.99}, "quantity": 1},
+            {"product":{"name": "Love Card 2", "price": 4.99, "quantity": 1}, "quantity": 1},
+            {"product":{"name": "Love Card 1", "price": 4.99, "quantity": 1}, "quantity": 1}
+          ]
+        }
+      ]
+    },
+    {
+      "orderId": "ORD002",
+      "orderDate": "2024-06-09T00:00:00.000Z",
+      "shippingAddress": {
+        "street": "456 Elm St",
+        "city": "Other City",
+        "state": "NY",
+        "zipCode": "67890",
+        "country": "USA"
+      },
+      "customerName": "Jane Smith",
+      "customerEmail": "jane@example.com",
+      "lineItems": [
+        {
+          "name": "Birthday Box",
+          "lineItemProducts": [
+            {"product":{"name": "Birthday Cupcake", "price": 9.99},"quantity": 2},
+            {"product":{"name": "$100 Visa Gift Card", "price": 100.00}, "quantity": 1},
+            {"product":{"name": "Birthday Card", "price": 4.99}, "quantity": 1}
+          ]
+        },
+        {
+          "name": "Party Supplies",
+          "lineItemProducts": [
+            {"product":{"name": "Balloon Set", "price": 14.99},"quantity": 1},
+            {"product":{"name": "Party Hats", "price": 9.99}, "quantity": 5}
+          ]
+        }
+      ]
+    },
+    {
+      "orderId": "ORD003",
+      "orderDate": "2024-06-09T00:00:00.000Z",
+      "shippingAddress": {
+        "street": "789 Oak St",
+        "city": "Another Town",
+        "state": "TX",
+        "zipCode": "54321",
+        "country": "USA"
+      },
+      "customerName": "Bob Johnson",
+      "customerEmail": "bob@example.com",
+      "lineItems": [
+        {
+          "name": "Client Gift Box",
+          "lineItemProducts": [
+            {"product":{"name": "Bottle of Wine", "price": 29.99},"quantity": 1},
+            {"product":{"name": "Fruit Basket", "price": 34.99},"quantity": 1}
+          ]
+        },
+        {
+            "name": "Party Supplies",
+            "lineItemProducts": [
+              {"product":{"name": "Balloon Set", "price": 14.99, "quantity": 1},"quantity": 1},
+              {"product":{"name": "Party Hats", "price": 9.99},"quantity": 5}
+            ]
+          }
+      ]
+    }
+  ]
