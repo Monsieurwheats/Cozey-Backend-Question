@@ -33,6 +33,17 @@ To populate the database with initial data, run:
 
 This script will clear existing data and add sample orders, products, and line items to the database.
 
+## Database Relationship
+Here is an overview of the relation between each object in the database
+
+Order
+|
++---> LineItem (Many-to-Many)
+|      |
+|      +---> LineItemProduct (One-to-Many)
+|             |
+|             +---> Product (Many-to-One)
+
 ## Dependencies
 
 - express
