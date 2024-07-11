@@ -36,13 +36,8 @@ This script will clear existing data and add sample orders, products, and line i
 ## Database Relationship
 Here is an overview of the relation between each object in the database
 
-Order
-|
-+---> LineItem (Many-to-Many)
-|      |
-|      +---> LineItemProduct (One-to-Many)
-|             |
-|             +---> Product (Many-to-One)
+![CleanShot 2024-07-11 at 10 51 07](https://github.com/Monsieurwheats/Cozey-Backend-Question/assets/48845407/1d0d1d2f-ea88-40bc-a3cd-d7b9fe0fe7b6)
+
 
 ## Dependencies
 
