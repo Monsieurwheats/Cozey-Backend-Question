@@ -33,17 +33,14 @@ async function fetchPickingList() {
     try {
         const response = await axios.get('/api/warehouse/picking-list');
         const pickingList = response.data;
-        console.log(pickingList)
         const pickingListContainer = document.getElementById('picking-list');
         pickingListContainer.innerHTML = pickingList.map(item => `
             <div>
                 <p>Product: ${item.name} - ${item.quantity}</p>
             </div>
         `).join('');
-        console.log(pickingListContainer)
-
     } catch (error) {
-        console.log('Error fetching picking list:', error);
+        console.error('Error fetching picking list:', error);
     }
 }
 
@@ -51,8 +48,6 @@ async function fetchPackingList() {
     try {
         const response = await axios.get('/api/warehouse/packing-list');
         const packingList = response.data;
-        console.log(packingList)
-
         const packingListContainer = document.getElementById('packing-list');
         packingListContainer.innerHTML = packingList.map(order => `
             <div>
@@ -71,10 +66,8 @@ async function fetchPackingList() {
                 </ul>
             </div>
         `).join('');
-         console.log(packingListContainer)
-
     } catch (error) {
-        console.log('Error fetching packing list:', error);
+        console.error('Error fetching packing list:', error);
     }
 }
 
